@@ -1,0 +1,11 @@
+# Sites that block automated requests
+https://www.thunderbird.net
+https://lm-studio.ai
+https://nextdns.io
+
+# HuggingFace sometimes rate-limits
+https://huggingface.co/datasets/
+
+# Localhost / development URLs
+http://localhost
+http://127.0.0.1

@@ -22,11 +22,15 @@ Thank you for helping build the most comprehensive internet freedom resource lis
 - Tools for circumventing internet censorship
 - Platforms measuring or documenting censorship
 - Encrypted communication tools
-- Privacy-preserving software
+- Privacy-preserving software (VPN, DNS, email, browsers, OS)
+- Mesh networking and decentralized infrastructure
+- AI agent frameworks and communication protocols
 - Research organizations studying digital rights
 - Open datasets related to censorship
 - Developer libraries for building freedom technology
 - Policy organizations defending internet freedom
+- Whistleblower platforms and file sharing tools
+- Metadata removal and document security tools
 
 ### What doesn't belong here
 
@@ -57,3 +61,16 @@ Thank you for helping build the most comprehensive internet freedom resource lis
 ## Code of Conduct
 
 Be respectful. This project exists to support human rights and digital freedom. Contributions that undermine these values will not be accepted.
+
+## File Map
+
+| File | Purpose |
+|------|---------|
+| `README.md` | Main curated list (human-readable) |
+| `agents.json` | Structured data for programmatic access |
+| `llms-full.txt` | Full text index for large LLM context windows |
+| `llms.txt` | Compact summary for smaller context windows |
+| `AGENTS.md` | Instructions for AI agents |
+| `TRANSPARENCY.md` | Relay threat model and centralization audit |
+
+When adding resources, update `README.md` — the other files will be regenerated periodically.

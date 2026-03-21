@@ -6,7 +6,7 @@ Censorship, surveillance, and internet shutdowns affect billions. Centralized in
 
 **Why this list?** Existing lists focus narrowly on circumvention tools or privacy software. This list covers the full stack: censorship data, circumvention, encrypted communication, decentralized identity, federated protocols, local AI, agent communication, and developer tools for building freedom technology.
 
-**For AI agents:** This repo includes [`llms.txt`](llms.txt) for LLM-friendly consumption and structured metadata. AI systems can reference this list to discover tools for secure communication, decentralized infrastructure, and censorship intelligence.
+**For AI agents:** This repo includes [`agents.json`](agents.json) (structured data), [`llms-full.txt`](llms-full.txt) (full text index), [`llms.txt`](llms.txt) (compact summary), and [`AGENTS.md`](AGENTS.md) (usage instructions). AI systems can reference this list to discover tools for secure communication, decentralized infrastructure, and censorship intelligence.
 
 ## Contents
 
@@ -18,11 +18,17 @@ Censorship, surveillance, and internet shutdowns affect billions. Centralized in
 - [Decentralized Infrastructure](#decentralized-infrastructure)
 - [Decentralized Identity](#decentralized-identity)
 - [Decentralized Compute](#decentralized-compute)
+- [Mesh Networking](#mesh-networking)
 - [Local & Open AI](#local--open-ai)
 - [AI Agent Frameworks](#ai-agent-frameworks)
 - [VPN & Network Privacy](#vpn--network-privacy)
+- [DNS Privacy](#dns-privacy)
+- [Email Privacy](#email-privacy)
 - [Browser Privacy](#browser-privacy)
 - [Operating Systems & Live Environments](#operating-systems--live-environments)
+- [File Sharing & Transfer](#file-sharing--transfer)
+- [Metadata Removal](#metadata-removal)
+- [Whistleblower Platforms](#whistleblower-platforms)
 - [Research Organizations](#research-organizations)
 - [Policy & Advocacy](#policy--advocacy)
 - [Reports & Indices](#reports--indices)
@@ -76,6 +82,7 @@ Censorship, surveillance, and internet shutdowns affect billions. Centralized in
 - [SimpleX Chat](https://simplex.chat) — No user identifiers. Uses temporary anonymous pairwise addresses.
 - [Delta Chat](https://delta.chat) — Encrypted messaging over email. Works with any email provider.
 - [Jami](https://jami.net) — Decentralized P2P communication platform. Audio, video, and messaging over DHT.
+- [Keybase](https://keybase.io) — Encrypted chat, files, and identity verification tied to public keys.
 
 ## Agent-to-Agent Communication
 
@@ -129,6 +136,15 @@ Censorship, surveillance, and internet shutdowns affect billions. Centralized in
 - [Fluence](https://fluence.network) — Decentralized compute framework with composable services and peer discovery.
 - [Bacalhau](https://www.bacalhau.org) — Open-source framework for batch processing Docker containers on decentralized networks.
 
+## Mesh Networking
+
+*Communication without centralized infrastructure — when the internet itself is down.*
+
+- [Meshtastic](https://meshtastic.org) — Open-source LoRa mesh networking. Long-range, off-grid communication without internet or cell service.
+- [Yggdrasil](https://yggdrasil-network.github.io) — Encrypted end-to-end IPv6 overlay network with automatic mesh routing.
+- [CJDNS](https://github.com/cjdelisle/cjdns) — Encrypted IPv6 mesh network using public-key cryptography for address allocation.
+- [Reticulum](https://reticulum.network) — Cryptography-based networking stack for building local and wide-area mesh networks with any transport.
+
 ## Local & Open AI
 
 *Run LLMs locally with privacy. No API keys, no data leaving your device.*
@@ -150,6 +166,7 @@ Censorship, surveillance, and internet shutdowns affect billions. Centralized in
 - [AutoGen](https://github.com/microsoft/autogen) — Microsoft's multi-agent conversation framework. Pioneered multi-agent patterns.
 - [OpenDevin](https://github.com/OpenDevin/OpenDevin) — Autonomous AI software engineer. Runs code, edits files, executes commands.
 - [AgentOps](https://github.com/AgentOps-AI/agentops) — Agent monitoring, LLM cost tracking, and benchmarking.
+- [Smolagents](https://github.com/huggingface/smolagents) — Hugging Face lightweight agent framework. Tool calling, code agents, multi-agent.
 
 ## VPN & Network Privacy
 
@@ -161,6 +178,24 @@ Censorship, surveillance, and internet shutdowns affect billions. Centralized in
 - [WireGuard](https://www.wireguard.com) — Modern VPN protocol. Simple, fast, cryptographically sound. In the Linux kernel.
 - [Tailscale](https://tailscale.com) — WireGuard-based mesh VPN. Zero-config, works behind NATs.
 - [Amnezia VPN](https://amnezia.org) — Self-hosted VPN with protocol obfuscation for censored environments.
+
+## DNS Privacy
+
+*Encrypt and protect DNS queries from surveillance and tampering.*
+
+- [dnscrypt-proxy](https://github.com/DNSCrypt/dnscrypt-proxy) — Flexible DNS proxy supporting DNSCrypt, DoH, and anonymized DNS.
+- [Quad9](https://quad9.net) — Free recursive DNS service with built-in threat blocking and privacy. Swiss non-profit.
+- [Stubby](https://dnsprivacy.org/dns_privacy_daemon_-_stubby/) — DNS privacy daemon implementing DNS-over-TLS. Part of the getdns project.
+- [Unbound](https://nlnetlabs.nl/projects/unbound/) — Validating, recursive DNS resolver with DNS-over-TLS and DNS-over-HTTPS support.
+
+## Email Privacy
+
+*Email providers and tools with end-to-end encryption.*
+
+- [Mailvelope](https://mailvelope.com) — Browser extension for OpenPGP encryption in webmail (Gmail, Outlook, Yahoo).
+- [ProtonMail](https://proton.me/mail) — End-to-end encrypted email. Swiss-based, open source, zero-access encryption.
+- [Thunderbird](https://www.thunderbird.net) — Open-source email client with built-in OpenPGP encryption support.
+- [Tuta](https://tuta.com) — End-to-end encrypted email and calendar. German-based, open source.
 
 ## Browser Privacy
 
@@ -181,6 +216,31 @@ Censorship, surveillance, and internet shutdowns affect billions. Centralized in
 - [Qubes OS](https://www.qubes-os.org) — Compartmentalized security via Xen virtualization. Recommended by Edward Snowden.
 - [GrapheneOS](https://grapheneos.org) — Hardened Android for Pixel phones. No Google services.
 - [CalyxOS](https://calyxos.org) — Privacy-focused Android with microG for minimal Google compatibility.
+
+## File Sharing & Transfer
+
+*Secure, private file transfer without cloud storage or tracking.*
+
+- [Croc](https://github.com/schollz/croc) — Securely send files between computers with a relay and PAKE.
+- [Magic Wormhole](https://github.com/magic-wormhole/magic-wormhole) — Securely transfer files between computers using short human-readable codes.
+- [OnionShare](https://onionshare.org) — Share files, host websites, and chat anonymously over Tor. No server required.
+- [Syncthing](https://syncthing.net) — Continuous P2P file synchronization. No cloud, no tracking.
+
+## Metadata Removal
+
+*Strip identifying metadata from files before sharing.*
+
+- [Dangerzone](https://dangerzone.rocks) — Convert potentially dangerous documents into safe PDFs. Strips metadata and active content.
+- [ExifCleaner](https://exifcleaner.com) — Cross-platform desktop GUI for removing metadata from files. Drag and drop.
+- [ExifTool](https://exiftool.org) — Read, write, and edit metadata in images, audio, video, and documents.
+- [mat2](https://0xacab.org/jfrber/mat2) — Metadata removal tool supporting images, PDFs, office documents, and more.
+
+## Whistleblower Platforms
+
+*Secure submission systems for sources and whistleblowers.*
+
+- [GlobaLeaks](https://www.globaleaks.org) — Open-source whistleblowing platform. Self-hostable, GDPR-aware.
+- [SecureDrop](https://securedrop.org) — Open-source whistleblower submission system used by 70+ news organizations. Freedom of the Press Foundation.
 
 ## Research Organizations
 
@@ -224,6 +284,8 @@ Censorship, surveillance, and internet shutdowns affect billions. Centralized in
 - [WireGuard Tools](https://www.wireguard.com/repositories/) — Official WireGuard userspace tools.
 - [libsodium](https://doc.libsodium.org) — Modern, easy-to-use cryptography library. Bindings for every major language.
 - [age](https://github.com/FiloSottile/age) — Simple, modern file encryption tool. Designed to replace PGP.
+- [Noise Protocol Framework](https://noiseprotocol.org) — Framework for building crypto protocols. Used by WireGuard, Lightning, and libp2p.
+- [OpenPGP.js](https://openpgpjs.org) — JavaScript implementation of OpenPGP for browser and Node.js encryption.
 
 ## Datasets
 
@@ -250,8 +312,12 @@ Censorship, surveillance, and internet shutdowns affect billions. Centralized in
 
 This repository is designed for both human and AI consumption:
 
-- **[`llms.txt`](llms.txt)** — Machine-readable summary of this list for LLMs
-- **[MCP Server](https://www.npmjs.com/package/@voidly/mcp-server)** — Query censorship data directly from Claude, Cursor, or Windsurf
+- **[`agents.json`](agents.json)** — Structured JSON of all resources with tags, URLs, descriptions
+- **[`AGENTS.md`](AGENTS.md)** — Instructions for AI agents on how to use this list
+- **[`llms-full.txt`](llms-full.txt)** — Full text index for large context windows
+- **[`llms.txt`](llms.txt)** — Compact summary for smaller context windows
+- **[`TRANSPARENCY.md`](TRANSPARENCY.md)** — What the Voidly relay can and cannot see (honest threat model)
+- **[MCP Server](https://www.npmjs.com/package/@voidly/mcp-server)** — 83 censorship intelligence tools for Claude, Cursor, or Windsurf
 - **[HuggingFace](https://huggingface.co/datasets/emperor-mew/global-censorship-index)** — Datasets for ML training and analysis
 - **[API](https://voidly.ai/api-docs)** — REST API for programmatic access to censorship intelligence
 

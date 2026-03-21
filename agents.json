@@ -1,0 +1,333 @@
+{
+  "version": "1.0.0",
+  "generated": "2026-03-21T00:00:00Z",
+  "total_resources": 153,
+  "repository": "https://github.com/voidly-ai/awesome-internet-freedom",
+  "license": "CC0-1.0",
+  "categories": [
+    {
+      "name": "Censorship Measurement & Data",
+      "slug": "censorship-measurement-data",
+      "description": "Platforms that measure, detect, and document internet censorship in real time.",
+      "resources": [
+        {"name": "Voidly Censorship Index", "url": "https://voidly.ai/censorship-index", "description": "AI-powered censorship intelligence. 19.6M live measurements, 119 countries, ML detection.", "tags": ["censorship", "measurement", "ml", "api", "mcp"], "install": "npx @voidly/mcp-server", "links": {"api": "https://voidly.ai/api-docs", "mcp": "https://www.npmjs.com/package/@voidly/mcp-server", "huggingface": "https://huggingface.co/datasets/emperor-mew/global-censorship-index"}},
+        {"name": "OONI", "url": "https://ooni.org", "description": "Global network measurement. Probes in 200+ countries detect blocking of websites and apps.", "tags": ["censorship", "measurement", "open-data"]},
+        {"name": "CensoredPlanet", "url": "https://censoredplanet.org", "description": "Automated remote censorship measurement without in-country vantage points.", "tags": ["censorship", "measurement", "research"]},
+        {"name": "IODA", "url": "https://ioda.inetintel.cc.gatech.edu", "description": "Real-time internet outage monitoring using BGP, active probing, and darknet data.", "tags": ["censorship", "measurement", "outages"]},
+        {"name": "Netblocks", "url": "https://netblocks.org", "description": "Real-time network intelligence documenting internet shutdowns and disruptions.", "tags": ["censorship", "measurement", "shutdowns"]},
+        {"name": "ICLab", "url": "https://iclab.org", "description": "Censorship measurement lab using VPN-based vantage points.", "tags": ["censorship", "measurement", "research"]},
+        {"name": "Cloudflare Radar", "url": "https://radar.cloudflare.com", "description": "Internet traffic, attack, and outage insights from Cloudflare's global network.", "tags": ["censorship", "measurement", "traffic"]}
+      ]
+    },
+    {
+      "name": "Circumvention Tools",
+      "slug": "circumvention-tools",
+      "description": "Software for bypassing internet censorship and restrictions.",
+      "resources": [
+        {"name": "Tor", "url": "https://www.torproject.org", "description": "Anonymity network routing traffic through multiple relays.", "tags": ["circumvention", "anonymity"]},
+        {"name": "Psiphon", "url": "https://psiphon.ca", "description": "Free circumvention tool combining VPN, SSH, and HTTP proxy technology.", "tags": ["circumvention", "vpn"]},
+        {"name": "Lantern", "url": "https://getlantern.org", "description": "Peer-to-peer circumvention tool using a trust-based network.", "tags": ["circumvention", "p2p"]},
+        {"name": "Snowflake", "url": "https://snowflake.torproject.org", "description": "Tor pluggable transport with browser-based volunteer proxies.", "tags": ["circumvention", "tor"]},
+        {"name": "Outline", "url": "https://getoutline.org", "description": "Open-source VPN built on Shadowsocks. Easy to deploy and share.", "tags": ["circumvention", "vpn"]},
+        {"name": "Shadowsocks", "url": "https://shadowsocks.org", "description": "Lightweight encrypted proxy widely used to bypass the Great Firewall.", "tags": ["circumvention", "proxy"]},
+        {"name": "V2Ray", "url": "https://www.v2fly.org", "description": "Platform for building proxies supporting multiple protocols.", "tags": ["circumvention", "proxy"]},
+        {"name": "Hysteria", "url": "https://hysteria.network", "description": "UDP-based proxy protocol for unreliable and censored networks.", "tags": ["circumvention", "proxy"]},
+        {"name": "GoodbyeDPI", "url": "https://github.com/ValdikSS/GoodbyeDPI", "description": "Deep packet inspection circumvention for Windows.", "tags": ["circumvention", "dpi"]},
+        {"name": "Geneva", "url": "https://geneva.cs.umd.edu", "description": "Genetic algorithm that discovers censorship evasion strategies.", "tags": ["circumvention", "ai", "research"]},
+        {"name": "Conjure", "url": "https://refraction.network", "description": "Refraction networking using participating ISPs for covert channels.", "tags": ["circumvention", "research"]},
+        {"name": "Pluggable Transports", "url": "https://www.pluggabletransports.info", "description": "Specification for transforming traffic to avoid detection.", "tags": ["circumvention", "protocol"]},
+        {"name": "Hiddify", "url": "https://hiddify.com", "description": "Multi-protocol proxy toolbox with auto-configuration.", "tags": ["circumvention", "proxy"]}
+      ]
+    },
+    {
+      "name": "Encrypted Communication",
+      "slug": "encrypted-communication",
+      "description": "Messaging and communication tools with end-to-end encryption.",
+      "resources": [
+        {"name": "Briar", "url": "https://briarproject.org", "description": "P2P encrypted messaging over Tor, Wi-Fi, and Bluetooth. Works offline.", "tags": ["encryption", "messaging", "p2p", "mesh"]},
+        {"name": "Cwtch", "url": "https://cwtch.im", "description": "Metadata-resistant messaging built on Tor. No servers, no phone numbers.", "tags": ["encryption", "messaging", "anonymity"]},
+        {"name": "Delta Chat", "url": "https://delta.chat", "description": "Encrypted messaging over email. Works with any email provider.", "tags": ["encryption", "messaging", "email"]},
+        {"name": "Element (Matrix)", "url": "https://element.io", "description": "Decentralized, encrypted communication on the Matrix protocol.", "tags": ["encryption", "messaging", "federation"]},
+        {"name": "Jami", "url": "https://jami.net", "description": "Decentralized P2P communication platform over DHT.", "tags": ["encryption", "messaging", "p2p"]},
+        {"name": "Keybase", "url": "https://keybase.io", "description": "Encrypted chat, files, and identity verification tied to public keys.", "tags": ["encryption", "messaging", "identity"]},
+        {"name": "Session", "url": "https://getsession.org", "description": "Decentralized messenger with onion routing. No phone number required.", "tags": ["encryption", "messaging", "anonymity"]},
+        {"name": "Signal", "url": "https://signal.org", "description": "The gold standard for encrypted messaging.", "tags": ["encryption", "messaging"]},
+        {"name": "SimpleX Chat", "url": "https://simplex.chat", "description": "No user identifiers. Uses temporary anonymous pairwise addresses.", "tags": ["encryption", "messaging", "anonymity"]},
+        {"name": "Veil by Voidly", "url": "https://msg.voidly.ai", "description": "E2E encrypted messenger for humans and AI agents. Post-quantum, deniable auth.", "tags": ["encryption", "messaging", "agent", "pq"]},
+        {"name": "Wire", "url": "https://wire.com", "description": "E2E encrypted messaging, calls, and file sharing.", "tags": ["encryption", "messaging"]}
+      ]
+    },
+    {
+      "name": "Agent-to-Agent Communication",
+      "slug": "agent-to-agent-communication",
+      "description": "Protocols and tools for AI agents to communicate securely and autonomously.",
+      "resources": [
+        {"name": "Voidly Agent Relay (VAR)", "url": "https://voidly.ai/agents", "description": "E2E encrypted agent messaging with Double Ratchet, X3DH, post-quantum, federation.", "tags": ["agent", "encryption", "protocol"], "install": "npm install @voidly/agent-sdk"},
+        {"name": "Google A2A Protocol", "url": "https://github.com/google/A2A", "description": "Agent-to-Agent protocol for interoperable agent communication.", "tags": ["agent", "protocol"]},
+        {"name": "Model Context Protocol (MCP)", "url": "https://modelcontextprotocol.io", "description": "Anthropic's protocol for connecting AI models to tools and data sources.", "tags": ["agent", "protocol", "ai"]}
+      ]
+    },
+    {
+      "name": "Federated Protocols",
+      "slug": "federated-protocols",
+      "description": "Open protocols for decentralized social, messaging, and real-time communication.",
+      "resources": [
+        {"name": "ActivityPub", "url": "https://www.w3.org/TR/activitypub/", "description": "W3C protocol powering the Fediverse.", "tags": ["federation", "protocol"]},
+        {"name": "AT Protocol", "url": "https://atproto.com", "description": "Bluesky's protocol for decentralized social networks.", "tags": ["federation", "protocol"]},
+        {"name": "Mastodon", "url": "https://github.com/mastodon/mastodon", "description": "Federated microblogging. ActivityPub-compatible.", "tags": ["federation", "social"]},
+        {"name": "Matrix", "url": "https://matrix.org", "description": "Open standard for federated real-time communication.", "tags": ["federation", "messaging"]},
+        {"name": "Nostr", "url": "https://nostr.com", "description": "Censorship-resistant relay-based social protocol.", "tags": ["federation", "censorship"]},
+        {"name": "PeerTube", "url": "https://github.com/chocobozzz/peertube", "description": "Decentralized video platform using ActivityPub and WebTorrent.", "tags": ["federation", "video"]},
+        {"name": "XMPP", "url": "https://xmpp.org", "description": "Extensible messaging protocol. Battle-tested, federation-native.", "tags": ["federation", "messaging"]}
+      ]
+    },
+    {
+      "name": "Decentralized Infrastructure",
+      "slug": "decentralized-infrastructure",
+      "description": "Storage, networking, and database layers free from centralized control.",
+      "resources": [
+        {"name": "Arweave", "url": "https://www.arweave.org", "description": "Permanent storage blockchain. One-time payment.", "tags": ["decentralized", "storage"]},
+        {"name": "Filecoin", "url": "https://filecoin.io", "description": "Decentralized storage network built on IPFS.", "tags": ["decentralized", "storage"]},
+        {"name": "GUN.js", "url": "https://gun.eco", "description": "Real-time, decentralized, offline-first graph database.", "tags": ["decentralized", "database"]},
+        {"name": "IPFS", "url": "https://ipfs.tech", "description": "Peer-to-peer file system using content-addressed blocks.", "tags": ["decentralized", "storage", "p2p"]},
+        {"name": "libp2p", "url": "https://libp2p.io", "description": "Modular network stack for P2P communication.", "tags": ["decentralized", "networking", "p2p"]},
+        {"name": "OrbitDB", "url": "https://github.com/orbitdb/orbitdb", "description": "Serverless, distributed database using IPFS + CRDTs.", "tags": ["decentralized", "database"]}
+      ]
+    },
+    {
+      "name": "Decentralized Identity",
+      "slug": "decentralized-identity",
+      "description": "Self-sovereign identity, DIDs, and verifiable credentials.",
+      "resources": [
+        {"name": "DIF", "url": "https://identity.foundation", "description": "Consortium developing DID specs and verifiable credentials.", "tags": ["identity", "did"]},
+        {"name": "Hyperledger Aries", "url": "https://github.com/hyperledger/aries", "description": "Shared components for SSI wallets, agents, and credentials.", "tags": ["identity", "ssi"]},
+        {"name": "Hyperledger Indy", "url": "https://github.com/hyperledger/indy-node", "description": "Distributed ledger for self-sovereign identity.", "tags": ["identity", "ssi"]},
+        {"name": "IDunion", "url": "https://idunion.org", "description": "European ecosystem for decentralized identity. GDPR-aligned.", "tags": ["identity", "ssi"]},
+        {"name": "Sovrin Network", "url": "https://sovrin.org", "description": "Public permissioned blockchain for trusted identity.", "tags": ["identity", "ssi"]},
+        {"name": "SpruceID", "url": "https://www.spruceid.com", "description": "Tools for decentralized identity. Sign-In with Ethereum, DIDKit.", "tags": ["identity", "did"]}
+      ]
+    },
+    {
+      "name": "Decentralized Compute",
+      "slug": "decentralized-compute",
+      "description": "Distributed GPU/CPU networks for inference, training, and batch processing.",
+      "resources": [
+        {"name": "Akash Network", "url": "https://akash.network", "description": "Kubernetes-compatible GPU marketplace.", "tags": ["compute", "gpu"]},
+        {"name": "Bacalhau", "url": "https://www.bacalhau.org", "description": "Batch processing Docker containers on decentralized networks.", "tags": ["compute", "docker"]},
+        {"name": "Fluence", "url": "https://fluence.network", "description": "Decentralized compute framework with composable services.", "tags": ["compute"]},
+        {"name": "Golem Network", "url": "https://golem.network", "description": "Decentralized supercomputer for rendering, simulations, and AI.", "tags": ["compute", "gpu"]},
+        {"name": "Render Network", "url": "https://render.network", "description": "GPU marketplace for AI inference, 3D rendering, and video.", "tags": ["compute", "gpu"]}
+      ]
+    },
+    {
+      "name": "Mesh Networking",
+      "slug": "mesh-networking",
+      "description": "Communication without centralized infrastructure.",
+      "resources": [
+        {"name": "CJDNS", "url": "https://github.com/cjdelisle/cjdns", "description": "Encrypted IPv6 mesh network using public-key cryptography.", "tags": ["mesh", "networking", "encryption"]},
+        {"name": "Meshtastic", "url": "https://meshtastic.org", "description": "Open-source LoRa mesh networking. Long-range, off-grid.", "tags": ["mesh", "networking", "hardware"]},
+        {"name": "Reticulum", "url": "https://reticulum.network", "description": "Cryptography-based networking stack for mesh networks.", "tags": ["mesh", "networking", "encryption"]},
+        {"name": "Yggdrasil", "url": "https://yggdrasil-network.github.io", "description": "Encrypted E2E IPv6 overlay network with automatic mesh routing.", "tags": ["mesh", "networking", "encryption"]}
+      ]
+    },
+    {
+      "name": "Local & Open AI",
+      "slug": "local-open-ai",
+      "description": "Run LLMs locally with privacy. No API keys, no data leaving your device.",
+      "resources": [
+        {"name": "Jan", "url": "https://jan.ai", "description": "Local-first AI operating system. No telemetry.", "tags": ["ai", "local", "privacy"]},
+        {"name": "LM Studio", "url": "https://lmstudio.ai", "description": "GUI + API server for running quantized LLMs locally.", "tags": ["ai", "local"]},
+        {"name": "llama.cpp", "url": "https://github.com/ggml-org/llama.cpp", "description": "C++ inference engine. Zero dependencies, CPU/GPU.", "tags": ["ai", "local", "inference"]},
+        {"name": "LocalAI", "url": "https://localai.io", "description": "Drop-in OpenAI API replacement. Multi-modal.", "tags": ["ai", "local", "api"]},
+        {"name": "Ollama", "url": "https://ollama.ai", "description": "Single-binary LLM runner with model registry and OpenAI compatibility.", "tags": ["ai", "local"], "install": "curl -fsSL https://ollama.ai/install.sh | sh"},
+        {"name": "vLLM", "url": "https://github.com/vllm-project/vllm", "description": "High-throughput inference engine with PagedAttention.", "tags": ["ai", "local", "inference"]}
+      ]
+    },
+    {
+      "name": "AI Agent Frameworks",
+      "slug": "ai-agent-frameworks",
+      "description": "Orchestration, tool calling, memory, and multi-agent collaboration.",
+      "resources": [
+        {"name": "AgentOps", "url": "https://github.com/AgentOps-AI/agentops", "description": "Agent monitoring, LLM cost tracking, and benchmarking.", "tags": ["agent", "monitoring"]},
+        {"name": "AutoGen", "url": "https://github.com/microsoft/autogen", "description": "Microsoft's multi-agent conversation framework.", "tags": ["agent", "multi-agent"]},
+        {"name": "CrewAI", "url": "https://github.com/crewAIInc/crewAI", "description": "Role-based multi-agent orchestration.", "tags": ["agent", "multi-agent"]},
+        {"name": "LangChain", "url": "https://github.com/langchain-ai/langchain", "description": "Tool calling, memory, and RAG ecosystem.", "tags": ["agent", "rag"]},
+        {"name": "LangGraph", "url": "https://github.com/langchain-ai/langgraph", "description": "Graph-based orchestration for stateful agents.", "tags": ["agent", "orchestration"]},
+        {"name": "OpenDevin", "url": "https://github.com/OpenDevin/OpenDevin", "description": "Autonomous AI software engineer.", "tags": ["agent", "coding"]},
+        {"name": "Smolagents", "url": "https://github.com/huggingface/smolagents", "description": "HuggingFace lightweight agent framework.", "tags": ["agent", "multi-agent"]}
+      ]
+    },
+    {
+      "name": "VPN & Network Privacy",
+      "slug": "vpn-network-privacy",
+      "description": "VPN services and network-level privacy tools.",
+      "resources": [
+        {"name": "Amnezia VPN", "url": "https://amnezia.org", "description": "Self-hosted VPN with protocol obfuscation.", "tags": ["vpn", "circumvention"]},
+        {"name": "IVPN", "url": "https://www.ivpn.net", "description": "Privacy-first VPN. Open source, WireGuard support.", "tags": ["vpn", "privacy"]},
+        {"name": "Mullvad VPN", "url": "https://mullvad.net", "description": "Privacy-focused. No email, no accounts. Accepts cash.", "tags": ["vpn", "privacy"]},
+        {"name": "ProtonVPN", "url": "https://protonvpn.com", "description": "Swiss-based, no-logs, open source. Free tier.", "tags": ["vpn", "privacy"]},
+        {"name": "Tailscale", "url": "https://tailscale.com", "description": "WireGuard-based mesh VPN. Zero-config.", "tags": ["vpn", "mesh"]},
+        {"name": "WireGuard", "url": "https://www.wireguard.com", "description": "Modern VPN protocol. Simple, fast, in the Linux kernel.", "tags": ["vpn", "protocol"]}
+      ]
+    },
+    {
+      "name": "DNS Privacy",
+      "slug": "dns-privacy",
+      "description": "Encrypt and protect DNS queries from surveillance and tampering.",
+      "resources": [
+        {"name": "dnscrypt-proxy", "url": "https://github.com/DNSCrypt/dnscrypt-proxy", "description": "Flexible DNS proxy supporting DNSCrypt, DoH, and anonymized DNS.", "tags": ["dns", "privacy", "encryption"]},
+        {"name": "Quad9", "url": "https://quad9.net", "description": "Free recursive DNS with threat blocking. Swiss non-profit.", "tags": ["dns", "privacy"]},
+        {"name": "Stubby", "url": "https://dnsprivacy.org/dns_privacy_daemon_-_stubby/", "description": "DNS privacy daemon implementing DNS-over-TLS.", "tags": ["dns", "privacy", "encryption"]},
+        {"name": "Unbound", "url": "https://nlnetlabs.nl/projects/unbound/", "description": "Validating, recursive DNS resolver with DoT and DoH.", "tags": ["dns", "privacy"]}
+      ]
+    },
+    {
+      "name": "Email Privacy",
+      "slug": "email-privacy",
+      "description": "Email providers and tools with end-to-end encryption.",
+      "resources": [
+        {"name": "Mailvelope", "url": "https://mailvelope.com", "description": "Browser extension for OpenPGP encryption in webmail.", "tags": ["email", "encryption"]},
+        {"name": "ProtonMail", "url": "https://proton.me/mail", "description": "E2E encrypted email. Swiss-based, zero-access encryption.", "tags": ["email", "encryption"]},
+        {"name": "Thunderbird", "url": "https://www.thunderbird.net", "description": "Open-source email client with built-in OpenPGP.", "tags": ["email", "encryption"]},
+        {"name": "Tuta", "url": "https://tuta.com", "description": "E2E encrypted email and calendar. German-based.", "tags": ["email", "encryption"]}
+      ]
+    },
+    {
+      "name": "Browser Privacy",
+      "slug": "browser-privacy",
+      "description": "Web browsers and extensions focused on privacy and circumvention.",
+      "resources": [
+        {"name": "Brave", "url": "https://brave.com", "description": "Built-in ad blocking, tracker protection, optional Tor.", "tags": ["browser", "privacy"]},
+        {"name": "Firefox", "url": "https://www.mozilla.org/firefox/", "description": "Open-source with Enhanced Tracking Protection.", "tags": ["browser", "privacy"]},
+        {"name": "Mullvad Browser", "url": "https://mullvad.net/browser", "description": "Tor Browser without Tor. Minimizes fingerprinting.", "tags": ["browser", "privacy"]},
+        {"name": "Tor Browser", "url": "https://www.torproject.org/download/", "description": "Firefox-based, routed through Tor. Resists fingerprinting.", "tags": ["browser", "anonymity", "circumvention"]},
+        {"name": "uBlock Origin", "url": "https://ublockorigin.com", "description": "Efficient, wide-spectrum content blocker.", "tags": ["browser", "privacy"]}
+      ]
+    },
+    {
+      "name": "Operating Systems & Live Environments",
+      "slug": "operating-systems",
+      "description": "Privacy-focused operating systems for high-risk situations.",
+      "resources": [
+        {"name": "CalyxOS", "url": "https://calyxos.org", "description": "Privacy-focused Android with microG.", "tags": ["os", "mobile", "privacy"]},
+        {"name": "GrapheneOS", "url": "https://grapheneos.org", "description": "Hardened Android for Pixel phones. No Google services.", "tags": ["os", "mobile", "privacy"]},
+        {"name": "Qubes OS", "url": "https://www.qubes-os.org", "description": "Compartmentalized security via Xen virtualization.", "tags": ["os", "desktop", "security"]},
+        {"name": "Tails", "url": "https://tails.net", "description": "Live OS routing all traffic through Tor. Leaves no trace.", "tags": ["os", "anonymity"]},
+        {"name": "Whonix", "url": "https://www.whonix.org", "description": "All traffic forced through Tor via isolated VMs.", "tags": ["os", "anonymity"]}
+      ]
+    },
+    {
+      "name": "File Sharing & Transfer",
+      "slug": "file-sharing-transfer",
+      "description": "Secure, private file transfer without cloud storage or tracking.",
+      "resources": [
+        {"name": "Croc", "url": "https://github.com/schollz/croc", "description": "Securely send files between computers with PAKE.", "tags": ["filesharing", "encryption"]},
+        {"name": "Magic Wormhole", "url": "https://github.com/magic-wormhole/magic-wormhole", "description": "Transfer files using short human-readable codes.", "tags": ["filesharing", "encryption"]},
+        {"name": "OnionShare", "url": "https://onionshare.org", "description": "Share files and chat anonymously over Tor.", "tags": ["filesharing", "anonymity"]},
+        {"name": "Syncthing", "url": "https://syncthing.net", "description": "Continuous P2P file synchronization. No cloud.", "tags": ["filesharing", "p2p"]}
+      ]
+    },
+    {
+      "name": "Metadata Removal",
+      "slug": "metadata-removal",
+      "description": "Strip identifying metadata from files before sharing.",
+      "resources": [
+        {"name": "Dangerzone", "url": "https://dangerzone.rocks", "description": "Convert dangerous documents into safe PDFs.", "tags": ["metadata", "security"]},
+        {"name": "ExifCleaner", "url": "https://exifcleaner.com", "description": "Desktop GUI for removing file metadata.", "tags": ["metadata", "gui"]},
+        {"name": "ExifTool", "url": "https://exiftool.org", "description": "Read, write, and edit metadata in images, audio, video.", "tags": ["metadata", "cli"]},
+        {"name": "mat2", "url": "https://0xacab.org/jfrber/mat2", "description": "Metadata removal for images, PDFs, office documents.", "tags": ["metadata", "cli"]}
+      ]
+    },
+    {
+      "name": "Whistleblower Platforms",
+      "slug": "whistleblower-platforms",
+      "description": "Secure submission systems for sources and whistleblowers.",
+      "resources": [
+        {"name": "GlobaLeaks", "url": "https://www.globaleaks.org", "description": "Open-source whistleblowing platform. Self-hostable, GDPR-aware.", "tags": ["whistleblower", "security"]},
+        {"name": "SecureDrop", "url": "https://securedrop.org", "description": "Whistleblower submission system used by 70+ news organizations.", "tags": ["whistleblower", "security"]}
+      ]
+    },
+    {
+      "name": "Research Organizations",
+      "slug": "research-organizations",
+      "description": "Academic and nonprofit organizations studying internet censorship and digital rights.",
+      "resources": [
+        {"name": "ARTICLE 19", "url": "https://www.article19.org", "description": "Defending freedom of expression and information globally.", "tags": ["research", "policy"]},
+        {"name": "Access Now", "url": "https://www.accessnow.org", "description": "#KeepItOn coalition tracking internet shutdowns.", "tags": ["research", "advocacy"]},
+        {"name": "Berkman Klein Center", "url": "https://cyber.harvard.edu", "description": "Harvard research center on internet and society.", "tags": ["research", "academic"]},
+        {"name": "Citizen Lab", "url": "https://citizenlab.ca", "description": "University of Toronto. Digital threats to civil society.", "tags": ["research", "academic"]},
+        {"name": "Freedom House", "url": "https://freedomhouse.org", "description": "Annual Freedom on the Net report. 70 countries ranked.", "tags": ["research", "reports"]},
+        {"name": "Open Technology Fund", "url": "https://www.opentech.fund", "description": "Funds Tor, Signal, OONI, and other freedom tools.", "tags": ["research", "funding"]},
+        {"name": "Oxford Internet Institute", "url": "https://www.oii.ox.ac.uk", "description": "University of Oxford. Internet's societal impact.", "tags": ["research", "academic"]}
+      ]
+    },
+    {
+      "name": "Policy & Advocacy",
+      "slug": "policy-advocacy",
+      "description": "Organizations defending digital rights through policy and legal action.",
+      "resources": [
+        {"name": "CPJ", "url": "https://cpj.org", "description": "Tracks journalist imprisonments and killings.", "tags": ["policy", "press"]},
+        {"name": "EFF", "url": "https://www.eff.org", "description": "Leading digital rights nonprofit. Legal cases, policy, tools.", "tags": ["policy", "advocacy"]},
+        {"name": "GNI", "url": "https://globalnetworkinitiative.org", "description": "Multi-stakeholder group for freedom of expression in ICT.", "tags": ["policy"]},
+        {"name": "ISOC", "url": "https://www.internetsociety.org", "description": "Promoting an open, globally-connected internet.", "tags": ["policy"]},
+        {"name": "RSF", "url": "https://rsf.org", "description": "Press freedom. World Press Freedom Index.", "tags": ["policy", "press"]}
+      ]
+    },
+    {
+      "name": "Reports & Indices",
+      "slug": "reports-indices",
+      "description": "Regular publications tracking internet freedom worldwide.",
+      "resources": [
+        {"name": "Access Now Shutdown Tracker", "url": "https://www.accessnow.org/campaign/keepiton/", "description": "Internet shutdowns tracked worldwide.", "tags": ["reports", "shutdowns"]},
+        {"name": "Freedom on the Net", "url": "https://freedomhouse.org/report/freedom-net", "description": "Annual internet freedom assessment of 70 countries.", "tags": ["reports"]},
+        {"name": "Google Transparency Report", "url": "https://transparencyreport.google.com/traffic/overview", "description": "Traffic and disruption data from Google's network.", "tags": ["reports", "data"]},
+        {"name": "Voidly Censorship Index", "url": "https://voidly.ai/censorship-index", "description": "Live, data-driven censorship rankings from 19.6M measurements.", "tags": ["reports", "data", "api"]},
+        {"name": "World Press Freedom Index", "url": "https://rsf.org/en/index", "description": "180 countries ranked by press freedom.", "tags": ["reports", "press"]}
+      ]
+    },
+    {
+      "name": "Developer Tools & Libraries",
+      "slug": "developer-tools",
+      "description": "Libraries and tools for building freedom technology.",
+      "resources": [
+        {"name": "Arti", "url": "https://gitlab.torproject.org/tpo/core/arti", "description": "Tor client in Rust. Modern, memory-safe.", "tags": ["dev", "tor"]},
+        {"name": "Cloak", "url": "https://github.com/cbeuw/Cloak", "description": "Pluggable transport disguising traffic as HTTPS.", "tags": ["dev", "circumvention"]},
+        {"name": "Noise Protocol Framework", "url": "https://noiseprotocol.org", "description": "Framework for building crypto protocols. Used by WireGuard, libp2p.", "tags": ["dev", "encryption", "protocol"]},
+        {"name": "OONI Probe", "url": "https://github.com/ooni/probe-cli", "description": "Run censorship tests from your device.", "tags": ["dev", "measurement"]},
+        {"name": "OpenPGP.js", "url": "https://openpgpjs.org", "description": "JavaScript OpenPGP for browser and Node.js.", "tags": ["dev", "encryption"]},
+        {"name": "Stem", "url": "https://stem.torproject.org", "description": "Python library for Tor.", "tags": ["dev", "tor"]},
+        {"name": "Voidly Agent SDK", "url": "https://www.npmjs.com/package/@voidly/agent-sdk", "description": "E2E encrypted agent messaging. Double Ratchet, X3DH, post-quantum.", "tags": ["dev", "agent", "encryption"], "install": "npm install @voidly/agent-sdk"},
+        {"name": "Voidly MCP Server", "url": "https://www.npmjs.com/package/@voidly/mcp-server", "description": "83 censorship intelligence tools for AI assistants.", "tags": ["dev", "mcp", "ai"], "install": "npx @voidly/mcp-server"},
+        {"name": "WireGuard Tools", "url": "https://www.wireguard.com/repositories/", "description": "Official WireGuard userspace tools.", "tags": ["dev", "vpn"]},
+        {"name": "age", "url": "https://github.com/FiloSottile/age", "description": "Simple, modern file encryption. Designed to replace PGP.", "tags": ["dev", "encryption"]},
+        {"name": "libsodium", "url": "https://doc.libsodium.org", "description": "Modern, easy-to-use cryptography library.", "tags": ["dev", "encryption"]},
+        {"name": "obfs4", "url": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/obfs4", "description": "Tor pluggable transport for traffic obfuscation.", "tags": ["dev", "tor", "circumvention"]}
+      ]
+    },
+    {
+      "name": "Datasets",
+      "slug": "datasets",
+      "description": "Open datasets for censorship research and analysis.",
+      "resources": [
+        {"name": "CensoredPlanet Data", "url": "https://data.censoredplanet.org", "description": "Longitudinal censorship datasets (DNS, HTTP, HTTPS).", "tags": ["dataset", "censorship"]},
+        {"name": "Citizen Lab Test Lists", "url": "https://github.com/citizenlab/test-lists", "description": "URL test lists used by measurement platforms.", "tags": ["dataset", "censorship"]},
+        {"name": "GFWatch", "url": "https://gfwatch.org", "description": "Longitudinal dataset of China's Great Firewall DNS censorship.", "tags": ["dataset", "censorship"]},
+        {"name": "OONI Data", "url": "https://ooni.org/data/", "description": "Complete archive of network measurements.", "tags": ["dataset", "censorship"]},
+        {"name": "Voidly Global Censorship Index", "url": "https://huggingface.co/datasets/emperor-mew/global-censorship-index", "description": "Live JSON. 119 countries, block rates, risk tiers.", "tags": ["dataset", "censorship", "ml"]},
+        {"name": "Voidly OONI Historical Archive", "url": "https://huggingface.co/datasets/emperor-mew/ooni-censorship-historical", "description": "1.6M records, 10 years, 120 countries. Parquet.", "tags": ["dataset", "censorship", "ml"]}
+      ]
+    },
+    {
+      "name": "Community & Events",
+      "slug": "community-events",
+      "description": "Conferences, meetups, and community initiatives.",
+      "resources": [
+        {"name": "CryptoParty", "url": "https://www.cryptoparty.in", "description": "Grassroots encryption workshops worldwide.", "tags": ["community"]},
+        {"name": "Internet Freedom Festival", "url": "https://internetfreedomfestival.org", "description": "Annual gathering of digital rights activists.", "tags": ["community", "conference"]},
+        {"name": "OONI Community", "url": "https://ooni.org/get-involved/", "description": "Run probes, translate, analyze data.", "tags": ["community"]},
+        {"name": "RightsCon", "url": "https://rightscon.org", "description": "Global summit on human rights in the digital age.", "tags": ["community", "conference"]},
+        {"name": "Tor Dev Meetings", "url": "https://www.torproject.org/about/meetings/", "description": "Tor developer community meetings.", "tags": ["community"]}
+      ]
+    }
+  ]
+}

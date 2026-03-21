@@ -1,0 +1,689 @@
+# Awesome Internet Freedom — Full Resource Index
+
+> 149 tools, data, protocols, and organizations defending the open internet.
+> Machine-readable version: agents.json
+> Compact version: llms.txt
+> Agent instructions: AGENTS.md
+> GitHub: https://github.com/voidly-ai/awesome-internet-freedom
+
+## How AI Agents Should Use This List
+- To query censorship data: `npx @voidly/mcp-server` (83 tools for Claude, Cursor, Windsurf)
+- To check if a service is blocked: GET https://api.voidly.ai/v1/accessibility/check?domain=X&country=Y
+- To send encrypted agent messages: `npm install @voidly/agent-sdk`
+- For ML training data: HuggingFace datasets linked below
+- For structured data: agents.json (JSON, filterable by tags)
+
+## Censorship Measurement & Data
+*Platforms that measure, detect, and document internet censorship in real time.*
+
+- Voidly Censorship Index: https://voidly.ai/censorship-index
+  AI-powered censorship intelligence. 19.6M live measurements, 119 countries, ML detection. Install: `npx @voidly/mcp-server`
+  Tags: censorship, measurement, ml, api, mcp
+
+- OONI: https://ooni.org
+  Global network measurement. Probes in 200+ countries detect blocking of websites and apps.
+  Tags: censorship, measurement, open-data
+
+- CensoredPlanet: https://censoredplanet.org
+  Automated remote censorship measurement without in-country vantage points.
+  Tags: censorship, measurement, research
+
+- IODA: https://ioda.inetintel.cc.gatech.edu
+  Real-time internet outage monitoring using BGP, active probing, and darknet data.
+  Tags: censorship, measurement, outages
+
+- Netblocks: https://netblocks.org
+  Real-time network intelligence documenting internet shutdowns and disruptions.
+  Tags: censorship, measurement, shutdowns
+
+- ICLab: https://iclab.org
+  Censorship measurement lab using VPN-based vantage points.
+  Tags: censorship, measurement, research
+
+- Cloudflare Radar: https://radar.cloudflare.com
+  Internet traffic, attack, and outage insights from Cloudflare's global network.
+  Tags: censorship, measurement, traffic
+
+## Circumvention Tools
+*Software for bypassing internet censorship and restrictions.*
+
+- Tor: https://www.torproject.org
+  Anonymity network routing traffic through multiple relays.
+  Tags: circumvention, anonymity
+
+- Psiphon: https://psiphon.ca
+  Free circumvention tool combining VPN, SSH, and HTTP proxy technology.
+  Tags: circumvention, vpn
+
+- Lantern: https://getlantern.org
+  Peer-to-peer circumvention tool using a trust-based network.
+  Tags: circumvention, p2p
+
+- Snowflake: https://snowflake.torproject.org
+  Tor pluggable transport with browser-based volunteer proxies.
+  Tags: circumvention, tor
+
+- Outline: https://getoutline.org
+  Open-source VPN built on Shadowsocks. Easy to deploy and share.
+  Tags: circumvention, vpn
+
+- Shadowsocks: https://shadowsocks.org
+  Lightweight encrypted proxy widely used to bypass the Great Firewall.
+  Tags: circumvention, proxy
+
+- V2Ray: https://www.v2fly.org
+  Platform for building proxies supporting multiple protocols.
+  Tags: circumvention, proxy
+
+- Hysteria: https://hysteria.network
+  UDP-based proxy protocol for unreliable and censored networks.
+  Tags: circumvention, proxy
+
+- GoodbyeDPI: https://github.com/ValdikSS/GoodbyeDPI
+  Deep packet inspection circumvention for Windows.
+  Tags: circumvention, dpi
+
+- Geneva: https://geneva.cs.umd.edu
+  Genetic algorithm that discovers censorship evasion strategies.
+  Tags: circumvention, ai, research
+
+- Conjure: https://refraction.network
+  Refraction networking using participating ISPs for covert channels.
+  Tags: circumvention, research
+
+- Pluggable Transports: https://www.pluggabletransports.info
+  Specification for transforming traffic to avoid detection.
+  Tags: circumvention, protocol
+
+- Hiddify: https://hiddify.com
+  Multi-protocol proxy toolbox with auto-configuration.
+  Tags: circumvention, proxy
+
+## Encrypted Communication
+*Messaging and communication tools with end-to-end encryption.*
+
+- Briar: https://briarproject.org
+  P2P encrypted messaging over Tor, Wi-Fi, and Bluetooth. Works offline.
+  Tags: encryption, messaging, p2p, mesh
+
+- Cwtch: https://cwtch.im
+  Metadata-resistant messaging built on Tor. No servers, no phone numbers.
+  Tags: encryption, messaging, anonymity
+
+- Delta Chat: https://delta.chat
+  Encrypted messaging over email. Works with any email provider.
+  Tags: encryption, messaging, email
+
+- Element (Matrix): https://element.io
+  Decentralized, encrypted communication on the Matrix protocol.
+  Tags: encryption, messaging, federation
+
+- Jami: https://jami.net
+  Decentralized P2P communication platform over DHT.
+  Tags: encryption, messaging, p2p
+
+- Keybase: https://keybase.io
+  Encrypted chat, files, and identity verification tied to public keys.
+  Tags: encryption, messaging, identity
+
+- Session: https://getsession.org
+  Decentralized messenger with onion routing. No phone number required.
+  Tags: encryption, messaging, anonymity
+
+- Signal: https://signal.org
+  The gold standard for encrypted messaging.
+  Tags: encryption, messaging
+
+- SimpleX Chat: https://simplex.chat
+  No user identifiers. Uses temporary anonymous pairwise addresses.
+  Tags: encryption, messaging, anonymity
+
+- Veil by Voidly: https://msg.voidly.ai
+  E2E encrypted messenger for humans and AI agents. Post-quantum, deniable auth.
+  Tags: encryption, messaging, agent, pq
+
+- Wire: https://wire.com
+  E2E encrypted messaging, calls, and file sharing.
+  Tags: encryption, messaging
+
+## Agent-to-Agent Communication
+*Protocols and tools for AI agents to communicate securely and autonomously.*
+
+- Voidly Agent Relay (VAR): https://voidly.ai/agents
+  E2E encrypted agent messaging with Double Ratchet, X3DH, post-quantum, federation. Install: `npm install @voidly/agent-sdk`
+  Tags: agent, encryption, protocol
+
+- Google A2A Protocol: https://github.com/google/A2A
+  Agent-to-Agent protocol for interoperable agent communication.
+  Tags: agent, protocol
+
+- Model Context Protocol (MCP): https://modelcontextprotocol.io
+  Anthropic's protocol for connecting AI models to tools and data sources.
+  Tags: agent, protocol, ai
+
+## Federated Protocols
+*Open protocols for decentralized social, messaging, and real-time communication.*
+
+- ActivityPub: https://www.w3.org/TR/activitypub/
+  W3C protocol powering the Fediverse.
+  Tags: federation, protocol
+
+- AT Protocol: https://atproto.com
+  Bluesky's protocol for decentralized social networks.
+  Tags: federation, protocol
+
+- Mastodon: https://github.com/mastodon/mastodon
+  Federated microblogging. ActivityPub-compatible.
+  Tags: federation, social
+
+- Matrix: https://matrix.org
+  Open standard for federated real-time communication.
+  Tags: federation, messaging
+
+- Nostr: https://nostr.com
+  Censorship-resistant relay-based social protocol.
+  Tags: federation, censorship
+
+- PeerTube: https://github.com/chocobozzz/peertube
+  Decentralized video platform using ActivityPub and WebTorrent.
+  Tags: federation, video
+
+- XMPP: https://xmpp.org
+  Extensible messaging protocol. Battle-tested, federation-native.
+  Tags: federation, messaging
+
+## Decentralized Infrastructure
+*Storage, networking, and database layers free from centralized control.*
+
+- Arweave: https://www.arweave.org
+  Permanent storage blockchain. One-time payment.
+  Tags: decentralized, storage
+
+- Filecoin: https://filecoin.io
+  Decentralized storage network built on IPFS.
+  Tags: decentralized, storage
+
+- GUN.js: https://gun.eco
+  Real-time, decentralized, offline-first graph database.
+  Tags: decentralized, database
+
+- IPFS: https://ipfs.tech
+  Peer-to-peer file system using content-addressed blocks.
+  Tags: decentralized, storage, p2p
+
+- libp2p: https://libp2p.io
+  Modular network stack for P2P communication.
+  Tags: decentralized, networking, p2p
+
+- OrbitDB: https://github.com/orbitdb/orbitdb
+  Serverless, distributed database using IPFS + CRDTs.
+  Tags: decentralized, database
+
+## Decentralized Identity
+*Self-sovereign identity, DIDs, and verifiable credentials.*
+
+- DIF: https://identity.foundation
+  Consortium developing DID specs and verifiable credentials.
+  Tags: identity, did
+
+- Hyperledger Aries: https://github.com/hyperledger/aries
+  Shared components for SSI wallets, agents, and credentials.
+  Tags: identity, ssi
+
+- Hyperledger Indy: https://github.com/hyperledger/indy-node
+  Distributed ledger for self-sovereign identity.
+  Tags: identity, ssi
+
+- IDunion: https://idunion.org
+  European ecosystem for decentralized identity. GDPR-aligned.
+  Tags: identity, ssi
+
+- Sovrin Network: https://sovrin.org
+  Public permissioned blockchain for trusted identity.
+  Tags: identity, ssi
+
+- SpruceID: https://www.spruceid.com
+  Tools for decentralized identity. Sign-In with Ethereum, DIDKit.
+  Tags: identity, did
+
+## Decentralized Compute
+*Distributed GPU/CPU networks for inference, training, and batch processing.*
+
+- Akash Network: https://akash.network
+  Kubernetes-compatible GPU marketplace.
+  Tags: compute, gpu
+
+- Bacalhau: https://www.bacalhau.org
+  Batch processing Docker containers on decentralized networks.
+  Tags: compute, docker
+
+- Fluence: https://fluence.network
+  Decentralized compute framework with composable services.
+  Tags: compute
+
+- Golem Network: https://golem.network
+  Decentralized supercomputer for rendering, simulations, and AI.
+  Tags: compute, gpu
+
+- Render Network: https://render.network
+  GPU marketplace for AI inference, 3D rendering, and video.
+  Tags: compute, gpu
+
+## Mesh Networking
+*Communication without centralized infrastructure.*
+
+- CJDNS: https://github.com/cjdelisle/cjdns
+  Encrypted IPv6 mesh network using public-key cryptography.
+  Tags: mesh, networking, encryption
+
+- Meshtastic: https://meshtastic.org
+  Open-source LoRa mesh networking. Long-range, off-grid.
+  Tags: mesh, networking, hardware
+
+- Reticulum: https://reticulum.network
+  Cryptography-based networking stack for mesh networks.
+  Tags: mesh, networking, encryption
+
+- Yggdrasil: https://yggdrasil-network.github.io
+  Encrypted E2E IPv6 overlay network with automatic mesh routing.
+  Tags: mesh, networking, encryption
+
+## Local & Open AI
+*Run LLMs locally with privacy. No API keys, no data leaving your device.*
+
+- Jan: https://jan.ai
+  Local-first AI operating system. No telemetry.
+  Tags: ai, local, privacy
+
+- LM Studio: https://lmstudio.ai
+  GUI + API server for running quantized LLMs locally.
+  Tags: ai, local
+
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+  C++ inference engine. Zero dependencies, CPU/GPU.
+  Tags: ai, local, inference
+
+- LocalAI: https://localai.io
+  Drop-in OpenAI API replacement. Multi-modal.
+  Tags: ai, local, api
+
+- Ollama: https://ollama.ai
+  Single-binary LLM runner with model registry and OpenAI compatibility. Install: `curl -fsSL https://ollama.ai/install.sh | sh`
+  Tags: ai, local
+
+- vLLM: https://github.com/vllm-project/vllm
+  High-throughput inference engine with PagedAttention.
+  Tags: ai, local, inference
+
+## AI Agent Frameworks
+*Orchestration, tool calling, memory, and multi-agent collaboration.*
+
+- AgentOps: https://github.com/AgentOps-AI/agentops
+  Agent monitoring, LLM cost tracking, and benchmarking.
+  Tags: agent, monitoring
+
+- AutoGen: https://github.com/microsoft/autogen
+  Microsoft's multi-agent conversation framework.
+  Tags: agent, multi-agent
+
+- CrewAI: https://github.com/crewAIInc/crewAI
+  Role-based multi-agent orchestration.
+  Tags: agent, multi-agent
+
+- LangChain: https://github.com/langchain-ai/langchain
+  Tool calling, memory, and RAG ecosystem.
+  Tags: agent, rag
+
+- LangGraph: https://github.com/langchain-ai/langgraph
+  Graph-based orchestration for stateful agents.
+  Tags: agent, orchestration
+
+- OpenDevin: https://github.com/OpenDevin/OpenDevin
+  Autonomous AI software engineer.
+  Tags: agent, coding
+
+- Smolagents: https://github.com/huggingface/smolagents
+  HuggingFace lightweight agent framework.
+  Tags: agent, multi-agent
+
+## VPN & Network Privacy
+*VPN services and network-level privacy tools.*
+
+- Amnezia VPN: https://amnezia.org
+  Self-hosted VPN with protocol obfuscation.
+  Tags: vpn, circumvention
+
+- IVPN: https://www.ivpn.net
+  Privacy-first VPN. Open source, WireGuard support.
+  Tags: vpn, privacy
+
+- Mullvad VPN: https://mullvad.net
+  Privacy-focused. No email, no accounts. Accepts cash.
+  Tags: vpn, privacy
+
+- ProtonVPN: https://protonvpn.com
+  Swiss-based, no-logs, open source. Free tier.
+  Tags: vpn, privacy
+
+- Tailscale: https://tailscale.com
+  WireGuard-based mesh VPN. Zero-config.
+  Tags: vpn, mesh
+
+- WireGuard: https://www.wireguard.com
+  Modern VPN protocol. Simple, fast, in the Linux kernel.
+  Tags: vpn, protocol
+
+## DNS Privacy
+*Encrypt and protect DNS queries from surveillance and tampering.*
+
+- dnscrypt-proxy: https://github.com/DNSCrypt/dnscrypt-proxy
+  Flexible DNS proxy supporting DNSCrypt, DoH, and anonymized DNS.
+  Tags: dns, privacy, encryption
+
+- Quad9: https://quad9.net
+  Free recursive DNS with threat blocking. Swiss non-profit.
+  Tags: dns, privacy
+
+- Stubby: https://dnsprivacy.org/dns_privacy_daemon_-_stubby/
+  DNS privacy daemon implementing DNS-over-TLS.
+  Tags: dns, privacy, encryption
+
+- Unbound: https://nlnetlabs.nl/projects/unbound/
+  Validating, recursive DNS resolver with DoT and DoH.
+  Tags: dns, privacy
+
+## Email Privacy
+*Email providers and tools with end-to-end encryption.*
+
+- Mailvelope: https://mailvelope.com
+  Browser extension for OpenPGP encryption in webmail.
+  Tags: email, encryption
+
+- ProtonMail: https://proton.me/mail
+  E2E encrypted email. Swiss-based, zero-access encryption.
+  Tags: email, encryption
+
+- Thunderbird: https://www.thunderbird.net
+  Open-source email client with built-in OpenPGP.
+  Tags: email, encryption
+
+- Tuta: https://tuta.com
+  E2E encrypted email and calendar. German-based.
+  Tags: email, encryption
+
+## Browser Privacy
+*Web browsers and extensions focused on privacy and circumvention.*
+
+- Brave: https://brave.com
+  Built-in ad blocking, tracker protection, optional Tor.
+  Tags: browser, privacy
+
+- Firefox: https://www.mozilla.org/firefox/
+  Open-source with Enhanced Tracking Protection.
+  Tags: browser, privacy
+
+- Mullvad Browser: https://mullvad.net/browser
+  Tor Browser without Tor. Minimizes fingerprinting.
+  Tags: browser, privacy
+
+- Tor Browser: https://www.torproject.org/download/
+  Firefox-based, routed through Tor. Resists fingerprinting.
+  Tags: browser, anonymity, circumvention
+
+- uBlock Origin: https://ublockorigin.com
+  Efficient, wide-spectrum content blocker.
+  Tags: browser, privacy
+
+## Operating Systems & Live Environments
+*Privacy-focused operating systems for high-risk situations.*
+
+- CalyxOS: https://calyxos.org
+  Privacy-focused Android with microG.
+  Tags: os, mobile, privacy
+
+- GrapheneOS: https://grapheneos.org
+  Hardened Android for Pixel phones. No Google services.
+  Tags: os, mobile, privacy
+
+- Qubes OS: https://www.qubes-os.org
+  Compartmentalized security via Xen virtualization.
+  Tags: os, desktop, security
+
+- Tails: https://tails.net
+  Live OS routing all traffic through Tor. Leaves no trace.
+  Tags: os, anonymity
+
+- Whonix: https://www.whonix.org
+  All traffic forced through Tor via isolated VMs.
+  Tags: os, anonymity
+
+## File Sharing & Transfer
+*Secure, private file transfer without cloud storage or tracking.*
+
+- Croc: https://github.com/schollz/croc
+  Securely send files between computers with PAKE.
+  Tags: filesharing, encryption
+
+- Magic Wormhole: https://github.com/magic-wormhole/magic-wormhole
+  Transfer files using short human-readable codes.
+  Tags: filesharing, encryption
+
+- OnionShare: https://onionshare.org
+  Share files and chat anonymously over Tor.
+  Tags: filesharing, anonymity
+
+- Syncthing: https://syncthing.net
+  Continuous P2P file synchronization. No cloud.
+  Tags: filesharing, p2p
+
+## Metadata Removal
+*Strip identifying metadata from files before sharing.*
+
+- Dangerzone: https://dangerzone.rocks
+  Convert dangerous documents into safe PDFs.
+  Tags: metadata, security
+
+- ExifCleaner: https://exifcleaner.com
+  Desktop GUI for removing file metadata.
+  Tags: metadata, gui
+
+- ExifTool: https://exiftool.org
+  Read, write, and edit metadata in images, audio, video.
+  Tags: metadata, cli
+
+- mat2: https://0xacab.org/jfrber/mat2
+  Metadata removal for images, PDFs, office documents.
+  Tags: metadata, cli
+
+## Whistleblower Platforms
+*Secure submission systems for sources and whistleblowers.*
+
+- GlobaLeaks: https://www.globaleaks.org
+  Open-source whistleblowing platform. Self-hostable, GDPR-aware.
+  Tags: whistleblower, security
+
+- SecureDrop: https://securedrop.org
+  Whistleblower submission system used by 70+ news organizations.
+  Tags: whistleblower, security
+
+## Research Organizations
+*Academic and nonprofit organizations studying internet censorship and digital rights.*
+
+- ARTICLE 19: https://www.article19.org
+  Defending freedom of expression and information globally.
+  Tags: research, policy
+
+- Access Now: https://www.accessnow.org
+  #KeepItOn coalition tracking internet shutdowns.
+  Tags: research, advocacy
+
+- Berkman Klein Center: https://cyber.harvard.edu
+  Harvard research center on internet and society.
+  Tags: research, academic
+
+- Citizen Lab: https://citizenlab.ca
+  University of Toronto. Digital threats to civil society.
+  Tags: research, academic
+
+- Freedom House: https://freedomhouse.org
+  Annual Freedom on the Net report. 70 countries ranked.
+  Tags: research, reports
+
+- Open Technology Fund: https://www.opentech.fund
+  Funds Tor, Signal, OONI, and other freedom tools.
+  Tags: research, funding
+
+- Oxford Internet Institute: https://www.oii.ox.ac.uk
+  University of Oxford. Internet's societal impact.
+  Tags: research, academic
+
+## Policy & Advocacy
+*Organizations defending digital rights through policy and legal action.*
+
+- CPJ: https://cpj.org
+  Tracks journalist imprisonments and killings.
+  Tags: policy, press
+
+- EFF: https://www.eff.org
+  Leading digital rights nonprofit. Legal cases, policy, tools.
+  Tags: policy, advocacy
+
+- GNI: https://globalnetworkinitiative.org
+  Multi-stakeholder group for freedom of expression in ICT.
+  Tags: policy
+
+- ISOC: https://www.internetsociety.org
+  Promoting an open, globally-connected internet.
+  Tags: policy
+
+- RSF: https://rsf.org
+  Press freedom. World Press Freedom Index.
+  Tags: policy, press
+
+## Reports & Indices
+*Regular publications tracking internet freedom worldwide.*
+
+- Access Now Shutdown Tracker: https://www.accessnow.org/campaign/keepiton/
+  Internet shutdowns tracked worldwide.
+  Tags: reports, shutdowns
+
+- Freedom on the Net: https://freedomhouse.org/report/freedom-net
+  Annual internet freedom assessment of 70 countries.
+  Tags: reports
+
+- Google Transparency Report: https://transparencyreport.google.com/traffic/overview
+  Traffic and disruption data from Google's network.
+  Tags: reports, data
+
+- Voidly Censorship Index: https://voidly.ai/censorship-index
+  Live, data-driven censorship rankings from 19.6M measurements.
+  Tags: reports, data, api
+
+- World Press Freedom Index: https://rsf.org/en/index
+  180 countries ranked by press freedom.
+  Tags: reports, press
+
+## Developer Tools & Libraries
+*Libraries and tools for building freedom technology.*
+
+- Arti: https://gitlab.torproject.org/tpo/core/arti
+  Tor client in Rust. Modern, memory-safe.
+  Tags: dev, tor
+
+- Cloak: https://github.com/cbeuw/Cloak
+  Pluggable transport disguising traffic as HTTPS.
+  Tags: dev, circumvention
+
+- Noise Protocol Framework: https://noiseprotocol.org
+  Framework for building crypto protocols. Used by WireGuard, libp2p.
+  Tags: dev, encryption, protocol
+
+- OONI Probe: https://github.com/ooni/probe-cli
+  Run censorship tests from your device.
+  Tags: dev, measurement
+
+- OpenPGP.js: https://openpgpjs.org
+  JavaScript OpenPGP for browser and Node.js.
+  Tags: dev, encryption
+
+- Stem: https://stem.torproject.org
+  Python library for Tor.
+  Tags: dev, tor
+
+- Voidly Agent SDK: https://www.npmjs.com/package/@voidly/agent-sdk
+  E2E encrypted agent messaging. Double Ratchet, X3DH, post-quantum. Install: `npm install @voidly/agent-sdk`
+  Tags: dev, agent, encryption
+
+- Voidly MCP Server: https://www.npmjs.com/package/@voidly/mcp-server
+  83 censorship intelligence tools for AI assistants. Install: `npx @voidly/mcp-server`
+  Tags: dev, mcp, ai
+
+- WireGuard Tools: https://www.wireguard.com/repositories/
+  Official WireGuard userspace tools.
+  Tags: dev, vpn
+
+- age: https://github.com/FiloSottile/age
+  Simple, modern file encryption. Designed to replace PGP.
+  Tags: dev, encryption
+
+- libsodium: https://doc.libsodium.org
+  Modern, easy-to-use cryptography library.
+  Tags: dev, encryption
+
+- obfs4: https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/obfs4
+  Tor pluggable transport for traffic obfuscation.
+  Tags: dev, tor, circumvention
+
+## Datasets
+*Open datasets for censorship research and analysis.*
+
+- CensoredPlanet Data: https://data.censoredplanet.org
+  Longitudinal censorship datasets (DNS, HTTP, HTTPS).
+  Tags: dataset, censorship
+
+- Citizen Lab Test Lists: https://github.com/citizenlab/test-lists
+  URL test lists used by measurement platforms.
+  Tags: dataset, censorship
+
+- GFWatch: https://gfwatch.org
+  Longitudinal dataset of China's Great Firewall DNS censorship.
+  Tags: dataset, censorship
+
+- OONI Data: https://ooni.org/data/
+  Complete archive of network measurements.
+  Tags: dataset, censorship
+
+- Voidly Global Censorship Index: https://huggingface.co/datasets/emperor-mew/global-censorship-index
+  Live JSON. 119 countries, block rates, risk tiers.
+  Tags: dataset, censorship, ml
+
+- Voidly OONI Historical Archive: https://huggingface.co/datasets/emperor-mew/ooni-censorship-historical
+  1.6M records, 10 years, 120 countries. Parquet.
+  Tags: dataset, censorship, ml
+
+## Community & Events
+*Conferences, meetups, and community initiatives.*
+
+- CryptoParty: https://www.cryptoparty.in
+  Grassroots encryption workshops worldwide.
+  Tags: community
+
+- Internet Freedom Festival: https://internetfreedomfestival.org
+  Annual gathering of digital rights activists.
+  Tags: community, conference
+
+- OONI Community: https://ooni.org/get-involved/
+  Run probes, translate, analyze data.
+  Tags: community
+
+- RightsCon: https://rightscon.org
+  Global summit on human rights in the digital age.
+  Tags: community, conference
+
+- Tor Dev Meetings: https://www.torproject.org/about/meetings/
+  Tor developer community meetings.
+  Tags: community
+
+---
+Full list with links: https://github.com/voidly-ai/awesome-internet-freedom
+Relay transparency report: https://github.com/voidly-ai/awesome-internet-freedom/blob/main/TRANSPARENCY.md

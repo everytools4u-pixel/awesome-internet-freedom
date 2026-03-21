@@ -1,8 +1,12 @@
 # Awesome Internet Freedom
 
 > A curated list of tools, data, protocols, and organizations defending the open internet.
+> Full version: llms-full.txt
+> Structured data: agents.json
+> Agent instructions: AGENTS.md
+> Relay transparency: TRANSPARENCY.md
 
-This resource covers censorship measurement, circumvention, encrypted communication, decentralized infrastructure, federated protocols, local AI, agent-to-agent communication, and developer tools for building freedom technology.
+This resource covers censorship measurement, circumvention, encrypted communication, decentralized infrastructure, federated protocols, mesh networking, local AI, agent-to-agent communication, and developer tools for building freedom technology.
 
 ## Key Resources for AI Agents
 
@@ -32,6 +36,7 @@ This resource covers censorship measurement, circumvention, encrypted communicat
 - Snowflake: https://snowflake.torproject.org — Browser-based Tor bridge
 - Outline: https://getoutline.org — Shadowsocks-based VPN
 - Geneva: https://geneva.cs.umd.edu — AI-discovered evasion strategies
+- Hiddify: https://hiddify.com — Multi-protocol proxy toolbox
 
 ### Encrypted Messaging
 - Veil (Voidly): https://msg.voidly.ai — E2E encrypted messenger, humans + AI agents
@@ -39,6 +44,7 @@ This resource covers censorship measurement, circumvention, encrypted communicat
 - Briar: https://briarproject.org — P2P, works offline
 - Session: https://getsession.org — Decentralized, no phone number
 - SimpleX: https://simplex.chat — No user identifiers
+- Cwtch: https://cwtch.im — Metadata-resistant, built on Tor
 
 ### Federated Protocols
 - ActivityPub: W3C protocol for federated social networks
@@ -52,8 +58,36 @@ This resource covers censorship measurement, circumvention, encrypted communicat
 - Filecoin: https://filecoin.io — Incentivized decentralized storage
 - Arweave: https://www.arweave.org — Permanent storage
 - libp2p: https://libp2p.io — Modular P2P networking stack
-- OrbitDB: Serverless distributed database on IPFS
-- GUN.js: https://gun.eco — Decentralized real-time database
+
+### Mesh Networking
+- Meshtastic: https://meshtastic.org — LoRa mesh, off-grid communication
+- Yggdrasil: https://yggdrasil-network.github.io — Encrypted IPv6 overlay mesh
+- CJDNS: https://github.com/cjdelisle/cjdns — Encrypted mesh network
+- Reticulum: https://reticulum.network — Crypto networking stack for mesh
+
+### DNS Privacy
+- dnscrypt-proxy: https://github.com/DNSCrypt/dnscrypt-proxy — DNSCrypt, DoH, anonymized DNS
+- Quad9: https://quad9.net — Free encrypted DNS, Swiss non-profit
+- Unbound: https://nlnetlabs.nl/projects/unbound/ — Recursive resolver with DoT/DoH
+
+### Email Privacy
+- ProtonMail: https://proton.me/mail — E2E encrypted email, Swiss
+- Tuta: https://tuta.com — E2E encrypted email, German
+- Thunderbird: https://www.thunderbird.net — Email client with OpenPGP
+
+### Whistleblower Platforms
+- SecureDrop: https://securedrop.org — Used by 70+ news organizations
+- GlobaLeaks: https://www.globaleaks.org — Self-hostable whistleblowing
+
+### File Sharing
+- OnionShare: https://onionshare.org — Anonymous file sharing over Tor
+- Syncthing: https://syncthing.net — P2P file sync, no cloud
+- Croc: https://github.com/schollz/croc — Secure file transfer with PAKE
+
+### Metadata Removal
+- mat2: https://0xacab.org/jfrber/mat2 — Strip metadata from files
+- ExifTool: https://exiftool.org — Read/write file metadata
+- Dangerzone: https://dangerzone.rocks — Convert docs to safe PDFs
 
 ### Decentralized Identity
 - DIF: https://identity.foundation — DID specs and standards
@@ -72,6 +106,7 @@ This resource covers censorship measurement, circumvention, encrypted communicat
 - LangChain/LangGraph: Tool calling, memory, RAG, graph workflows
 - AutoGen: Microsoft multi-agent conversations
 - OpenDevin: Autonomous AI software engineer
+- Smolagents: HuggingFace lightweight agent framework
 
 ### Decentralized Compute
 - Akash: https://akash.network — GPU marketplace
@@ -88,6 +123,8 @@ This resource covers censorship measurement, circumvention, encrypted communicat
 ### Developer Libraries
 - Voidly Agent SDK: E2E encrypted agent messaging (`@voidly/agent-sdk`)
 - Voidly MCP Server: Censorship tools for AI (`@voidly/mcp-server`)
+- Noise Protocol Framework: Crypto protocol framework (WireGuard, libp2p)
+- OpenPGP.js: JavaScript OpenPGP implementation
 - OONI Probe: Run censorship tests
 - Arti: Tor client in Rust
 - libsodium: Modern cryptography library
@@ -95,3 +132,4 @@ This resource covers censorship measurement, circumvention, encrypted communicat
 
 ## Source
 Full list with links: https://github.com/voidly-ai/awesome-internet-freedom
+Relay transparency: https://github.com/voidly-ai/awesome-internet-freedom/blob/main/TRANSPARENCY.md
