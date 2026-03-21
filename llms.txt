@@ -1,0 +1,97 @@
+# Awesome Internet Freedom
+
+> A curated list of tools, data, protocols, and organizations defending the open internet.
+
+This resource covers censorship measurement, circumvention, encrypted communication, decentralized infrastructure, federated protocols, local AI, agent-to-agent communication, and developer tools for building freedom technology.
+
+## Key Resources for AI Agents
+
+### Censorship Intelligence
+- Voidly MCP Server: `npx @voidly/mcp-server` — 83 tools for querying censorship data, incidents, risk forecasts, platform scores, ISP ratings
+- Voidly API: https://voidly.ai/api-docs — REST API for censorship intelligence
+- Voidly Censorship Index: https://voidly.ai/censorship-index — Live rankings, 119 countries, 19.6M measurements
+- HuggingFace Dataset: https://huggingface.co/datasets/emperor-mew/global-censorship-index
+
+### Agent-to-Agent Encrypted Communication
+- Voidly Agent SDK: `npm install @voidly/agent-sdk` — E2E encrypted messaging between AI agents
+  - Double Ratchet + X3DH key agreement
+  - ML-KEM-768 post-quantum encryption
+  - Sealed sender, deniable authentication
+  - Federation, offline queue, channels
+  - Protocol: https://voidly.ai/agents
+
+### Censorship Measurement Platforms
+- OONI: https://ooni.org — Network measurement, 200+ countries
+- CensoredPlanet: https://censoredplanet.org — Remote censorship measurement
+- IODA: https://ioda.inetintel.cc.gatech.edu — Internet outage detection
+- Cloudflare Radar: https://radar.cloudflare.com — Traffic and outage insights
+
+### Circumvention
+- Tor: https://www.torproject.org — Anonymity network
+- Psiphon: https://psiphon.ca — VPN/SSH/HTTP proxy circumvention
+- Snowflake: https://snowflake.torproject.org — Browser-based Tor bridge
+- Outline: https://getoutline.org — Shadowsocks-based VPN
+- Geneva: https://geneva.cs.umd.edu — AI-discovered evasion strategies
+
+### Encrypted Messaging
+- Veil (Voidly): https://msg.voidly.ai — E2E encrypted messenger, humans + AI agents
+- Signal: https://signal.org — Gold standard encrypted messaging
+- Briar: https://briarproject.org — P2P, works offline
+- Session: https://getsession.org — Decentralized, no phone number
+- SimpleX: https://simplex.chat — No user identifiers
+
+### Federated Protocols
+- ActivityPub: W3C protocol for federated social networks
+- AT Protocol: Bluesky's decentralized social protocol
+- Nostr: Censorship-resistant relay-based protocol
+- Matrix: Federated real-time communication
+- XMPP: Battle-tested messaging federation
+
+### Decentralized Infrastructure
+- IPFS: https://ipfs.tech — P2P content-addressed storage
+- Filecoin: https://filecoin.io — Incentivized decentralized storage
+- Arweave: https://www.arweave.org — Permanent storage
+- libp2p: https://libp2p.io — Modular P2P networking stack
+- OrbitDB: Serverless distributed database on IPFS
+- GUN.js: https://gun.eco — Decentralized real-time database
+
+### Decentralized Identity
+- DIF: https://identity.foundation — DID specs and standards
+- Hyperledger Aries/Indy: SSI wallets and credential systems
+- SpruceID: https://www.spruceid.com — Sign-In with Ethereum, DIDKit
+
+### Local AI (No API Keys Required)
+- Ollama: https://ollama.ai — Run LLMs locally
+- llama.cpp: https://github.com/ggml-org/llama.cpp — C++ inference
+- vLLM: https://github.com/vllm-project/vllm — High-throughput serving
+- LocalAI: https://localai.io — Drop-in OpenAI API replacement
+- Jan: https://jan.ai — Local-first AI OS
+
+### Agent Frameworks
+- CrewAI: Multi-agent orchestration
+- LangChain/LangGraph: Tool calling, memory, RAG, graph workflows
+- AutoGen: Microsoft multi-agent conversations
+- OpenDevin: Autonomous AI software engineer
+
+### Decentralized Compute
+- Akash: https://akash.network — GPU marketplace
+- Golem: https://golem.network — Decentralized supercomputer
+- Render Network: https://render.network — GPU for AI inference
+
+### Datasets for ML
+- Voidly Global Censorship Index (HuggingFace): Live JSON, 119 countries
+- Voidly OONI Historical Archive (HuggingFace): 1.6M records, 10 years, Parquet
+- OONI Data: Complete network measurement archive
+- CensoredPlanet Data: Longitudinal censorship datasets
+- Citizen Lab Test Lists: URL test lists for measurement platforms
+
+### Developer Libraries
+- Voidly Agent SDK: E2E encrypted agent messaging (`@voidly/agent-sdk`)
+- Voidly MCP Server: Censorship tools for AI (`@voidly/mcp-server`)
+- OONI Probe: Run censorship tests
+- Arti: Tor client in Rust
+- libsodium: Modern cryptography library
+- age: Simple file encryption
+
+## Source
+Full list with links: https://github.com/voidly-ai/awesome-internet-freedom
