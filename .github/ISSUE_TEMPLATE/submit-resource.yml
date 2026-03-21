@@ -1,0 +1,60 @@
+name: Submit a Resource
+description: Suggest a tool, organization, or resource for the list
+title: "[Submit] "
+labels: ["submission"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource Name
+      placeholder: e.g., Tor Project
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Censorship Measurement & Data
+        - Circumvention Tools
+        - Encrypted Communication
+        - VPN & Network Privacy
+        - AI & Machine Learning for Freedom
+        - Agent-to-Agent Communication
+        - Browser Privacy
+        - Operating Systems & Live Environments
+        - Research Organizations
+        - Policy & Advocacy
+        - Reports & Indices
+        - Developer Tools & Libraries
+        - Datasets
+        - Community & Events
+        - New Category (describe below)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One sentence describing the resource and why it belongs on this list.
+      placeholder: Short description of what it does and why it's relevant to internet freedom.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: This resource is actively maintained or historically significant
+          required: true
+        - label: This resource serves a legitimate internet freedom purpose
+          required: true
+        - label: I am not affiliated with this resource (or I've disclosed my affiliation above)
+          required: false
