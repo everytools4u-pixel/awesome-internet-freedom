@@ -276,6 +276,7 @@ Censorship, surveillance, and internet shutdowns affect billions. Centralized in
 
 - [Voidly Agent SDK](https://www.npmjs.com/package/@voidly/agent-sdk) — E2E encrypted agent messaging. Double Ratchet, X3DH, post-quantum. `npm install @voidly/agent-sdk`
 - [Voidly MCP Server](https://www.npmjs.com/package/@voidly/mcp-server) — 83 censorship intelligence tools for AI assistants. `npx @voidly/mcp-server`
+- [Voidly CLI](https://www.npmjs.com/package/@voidly/cli) — Query global censorship data from your terminal. `npx @voidly/cli check <domain> <country>`
 - [OONI Probe](https://github.com/ooni/probe-cli) — Run censorship tests from your device.
 - [Arti](https://gitlab.torproject.org/tpo/core/arti) — Tor client in Rust. Modern, memory-safe.
 - [obfs4](https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/obfs4) — Tor pluggable transport for traffic obfuscation.
