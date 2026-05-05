@@ -303,7 +303,7 @@ Censorship, surveillance, and internet shutdowns affect billions. Centralized in
 
 - [Internet Freedom Festival (IFF)](https://internetfreedomfestival.org) — Annual gathering of digital rights activists and developers.
 - [RightsCon](https://rightscon.org) — Global summit on human rights in the digital age.
-- [Tor Dev Meetings](https://www.torproject.org/about/meetings/) — Tor developer community meetings.
+- [Tor Project Community](https://community.torproject.org/) — Tor developer community, meetings, and onboarding resources.
 - [OONI Community](https://ooni.org/get-involved/) — Run probes, translate, analyze data.
 - [CryptoParty](https://www.cryptoparty.in) — Grassroots hands-on encryption workshops worldwide.
 

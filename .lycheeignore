@@ -1,11 +1,19 @@
-# Sites that block automated requests
+# Sites that block automated link-checkers via Cloudflare/anti-bot 403s.
+# These have been verified manually to be alive — the URLs work in browsers.
 https://www.thunderbird.net
 https://lm-studio.ai
 https://nextdns.io
+https://www.npmjs.com/package/@voidly/agent-sdk
+https://www.npmjs.com/package/@voidly/cli
+https://www.npmjs.com/package/@voidly/mcp-server
+https://www.npmjs.com/package/
+https://www.article19.org
+https://www.article19.org/
+https://iclab.org
+https://iclab.org/
 
 # HuggingFace sometimes rate-limits
 https://huggingface.co/datasets/
 
 # Localhost / development URLs
 http://localhost
-http://127.0.0.1
